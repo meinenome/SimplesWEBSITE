@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice App Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <!-- Navigation Bar -->
+    <nav
+      class="bg-white shadow-md p-4 flex justify-between items-center fixed top-0 left-0 w-full z-10">
+      <div class="text-xl font-bold">Invoice App Generator</div>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+        <li><a href="#features" class="hover:text-blue-500">Features</a></li>
+        <li><a href="#gallery" class="hover:text-blue-500">Gallery</a></li>
+        <li><a href="#download" class="hover:text-blue-500">Download</a></li>
+        <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- se le cti -->
+    <section
+      id="home"
+      class="h-screen flex flex-col justify-center items-center bg-blue-500 text-white">
+      <h1 class="text-4xl font-bold">Manage Invoices with Simples Pro</h1>
+      <p class="mt-4">Create, save, and share invoices with ease.</p>
+    </section>
+
+    <section
+      id="features"
+      class="h-screen flex flex-col justify-center items-center px-6 bg-white">
+      <h2 class="text-3xl font-semibold">App Features</h2>
+      <div class="grid md:grid-cols-3 gap-6 mt-10 w-full max-w-5xl">
+        <div class="p-6 bg-gray-100 shadow rounded-lg">
+          <h3 class="text-xl font-semibold">Invoices and GST total</h3>
+          <p class="text-gray-600">
+            Create invoices and let us manage the total of GST and invoices .
+          </p>
+        </div>
+        <div class="p-6 bg-gray-100 shadow rounded-lg">
+          <h3 class="text-xl font-semibold">GST</h3>
+          <p class="text-gray-600">
+            Create invoices and let us calculate your.
+          </p>
+        </div>
+        <div class="p-6 bg-gray-100 shadow rounded-lg">
+          <h3 class="text-xl font-semibold">Add images</h3>
+          <p class="text-gray-600">
+            Create invoices and add phots of your work.
+          </p>
+        </div>
+        <div class="p-6 bg-gray-100 shadow rounded-lg">
+          <h3 class="text-xl font-semibold">Custom Invoices</h3>
+          <p class="text-gray-600">
+            Create invoices tailored to your business needs.
+          </p>
+        </div>
+        <div class="p-6 bg-gray-100 shadow rounded-lg">
+          <h3 class="text-xl font-semibold">Save & Share</h3>
+          <p class="text-gray-600">
+            Save your invoices and share them instantly.
+          </p>
+        </div>
+        <div class="p-6 bg-gray-100 shadow rounded-lg">
+          <h3 class="text-xl font-semibold">Quick Calculations</h3>
+          <p class="text-gray-600">
+            Handles GST, expenses, and totals automatically.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="gallery"
+      class="h-screen flex flex-col justify-center items-center bg-gray-100 text-center">
+      <h2 class="text-3xl font-semibold">Our Apps</h2>
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+        <img src="1.png" class="w-60 rounded-lg shadow-md" />
+        <img src="2.png" class="w-60 rounded-lg shadow-md" />
+        <img src="3.png" class="w-60 rounded-lg shadow-md" />
+        <img src="11.png" class="w-60 rounded-lg shadow-md" />
+        <img src="12.png" class="w-60 rounded-lg shadow-md" />
+      </div>
+    </section>
+
+    <section
+      id="download"
+      class="h-screen flex flex-col justify-center items-center bg-white text-center">
+      <h2 class="text-3xl font-semibold">Download the App</h2>
+      <p class="mt-4">Available on the iOS App Store.</p>
+      <a
+        href="https://apps.apple.com/au/app/simplespro/id6498627150"
+        class="mt-6 bg-blue-500 text-white px-6 py-3 rounded-md inline-block"
+        >Download Now</a
+      >
+    </section>
+
+    <section
+      id="contact"
+      class="h-screen flex flex-col justify-center items-center bg-gray-100 text-center">
+      <h2 class="text-3xl font-semibold">Contact Us</h2>
+      <form class="mt-6 max-w-lg mx-auto bg-white p-6 shadow-md rounded-lg">
+        <input
+          type="text"
+          placeholder="Your Name"
+          class="w-full mb-4 p-3 border rounded-md"
+          required />
+        <input
+          type="email"
+          placeholder="Your Email"
+          class="w-full mb-4 p-3 border rounded-md"
+          required />
+        <textarea
+          placeholder="Your Message"
+          class="w-full mb-4 p-3 border rounded-md"
+          rows="4"
+          required></textarea>
+        <button class="bg-blue-500 text-white px-6 py-3 rounded-md">
+          Send Message
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-white shadow-md">
+      <p>&copy; 2024 Invoice App Generator. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
