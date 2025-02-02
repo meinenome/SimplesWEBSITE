@@ -9,61 +9,105 @@
   <body class="bg-gray-100 text-gray-900">
     <!-- Navigation Bar -->
     <nav
-      class="bg-white shadow-md p-4 flex justify-between items-center fixed top-0 left-0 w-full z-10">
+      class="bg-white shadow-md p-4 fixed top-0 left-0 w-full z-10 flex justify-between items-center"
+    >
       <div class="text-xl font-bold">Invoice App Generator</div>
-      <ul class="hidden md:flex space-x-6">
-        <li><a href="#home" class="hover:text-blue-500">Home</a></li>
-        <li><a href="#features" class="hover:text-blue-500">Features</a></li>
-        <li><a href="#gallery" class="hover:text-blue-500">Gallery</a></li>
-        <li><a href="#download" class="hover:text-blue-500">Download</a></li>
-        <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+      <button id="menu-toggle" class="md:hidden text-xl">&#9776;</button>
+      <ul
+        id="menu"
+        class="hidden md:flex space-x-6 absolute md:static bg-white md:bg-transparent w-full md:w-auto left-0 top-16 md:top-0 p-4 md:p-0 shadow-md md:shadow-none"
+      >
+        <li>
+          <a href="#home" class="block py-2 md:py-0 px-4 hover:text-blue-500"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#features"
+            class="block py-2 md:py-0 px-4 hover:text-blue-500"
+            >Features</a
+          >
+        </li>
+        <li>
+          <a href="#gallery" class="block py-2 md:py-0 px-4 hover:text-blue-500"
+            >Gallery</a
+          >
+        </li>
+        <li>
+          <a
+            href="#download"
+            class="block py-2 md:py-0 px-4 hover:text-blue-500"
+            >Download</a
+          >
+        </li>
+        <li>
+          <a href="#contact" class="block py-2 md:py-0 px-4 hover:text-blue-500"
+            >Contact</a
+          >
+        </li>
       </ul>
     </nav>
 
-    <!-- se le cti -->
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("menu").classList.toggle("hidden");
+        });
+    </script>
+
+    <!-- Hero Section -->
     <section
       id="home"
-      class="h-screen flex flex-col justify-center items-center bg-blue-500 text-white">
-      <h1 class="text-4xl font-bold">Manage Invoices with Simples Pro</h1>
+      class="h-screen flex flex-col justify-center items-center bg-blue-500 text-white text-center p-6 w-full min-h-screen"
+    >
+      <h1 class="text-3xl md:text-4xl font-bold">
+        Manage Invoices with Simples Pro
+      </h1>
       <p class="mt-4">Create, save, and share invoices with ease.</p>
     </section>
 
+    <!-- Features Section -->
     <section
       id="features"
-      class="h-screen flex flex-col justify-center items-center px-6 bg-white">
+      class="h-screen flex flex-col justify-center items-center bg-white text-center px-6 w-full"
+    >
       <h2 class="text-3xl font-semibold">App Features</h2>
-      <div class="grid md:grid-cols-3 gap-6 mt-10 w-full max-w-5xl">
-        <div class="p-6 bg-gray-100 shadow rounded-lg">
+      <div
+        class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10 max-w-5xl mx-auto"
+      >
+        <div class="p-6 bg-gray-100 rounded-lg">
           <h3 class="text-xl font-semibold">Invoices and GST total</h3>
           <p class="text-gray-600">
-            Create invoices and let us manage the total of GST and invoices .
+            Create invoices and let us manage the total of GST and invoices.
           </p>
         </div>
-        <div class="p-6 bg-gray-100 shadow rounded-lg">
+        <div class="p-6 bg-gray-100 rounded-lg">
           <h3 class="text-xl font-semibold">GST</h3>
           <p class="text-gray-600">
-            Create invoices and let us calculate your.
+            Create invoices and let us calculate your tax.
           </p>
         </div>
-        <div class="p-6 bg-gray-100 shadow rounded-lg">
+        <div class="p-6 bg-gray-100 rounded-lg">
           <h3 class="text-xl font-semibold">Add images</h3>
           <p class="text-gray-600">
-            Create invoices and add phots of your work.
+            Create invoices and add photos of your work.
           </p>
         </div>
-        <div class="p-6 bg-gray-100 shadow rounded-lg">
+        <div class="p-6 bg-gray-100 rounded-lg">
           <h3 class="text-xl font-semibold">Custom Invoices</h3>
           <p class="text-gray-600">
             Create invoices tailored to your business needs.
           </p>
         </div>
-        <div class="p-6 bg-gray-100 shadow rounded-lg">
+        <div class="p-6 bg-gray-100 rounded-lg">
           <h3 class="text-xl font-semibold">Save & Share</h3>
           <p class="text-gray-600">
             Save your invoices and share them instantly.
           </p>
         </div>
-        <div class="p-6 bg-gray-100 shadow rounded-lg">
+        <div class="p-6 bg-gray-100 rounded-lg">
           <h3 class="text-xl font-semibold">Quick Calculations</h3>
           <p class="text-gray-600">
             Handles GST, expenses, and totals automatically.
@@ -72,9 +116,11 @@
       </div>
     </section>
 
+    <!-- Gallery Section -->
     <section
       id="gallery"
-      class="h-screen flex flex-col justify-center items-center bg-gray-100 text-center">
+      class="h-screen flex flex-col justify-center items-center bg-gray-100 text-center"
+    >
       <h2 class="text-3xl font-semibold">Our Apps</h2>
       <div class="mt-10 flex flex-wrap justify-center gap-4">
         <img src="1.png" class="w-60 rounded-lg shadow-md" />
@@ -85,9 +131,11 @@
       </div>
     </section>
 
+    <!-- Download Section -->
     <section
       id="download"
-      class="h-screen flex flex-col justify-center items-center bg-white text-center">
+      class="h-screen flex flex-col justify-center items-center bg-white text-center"
+    >
       <h2 class="text-3xl font-semibold">Download the App</h2>
       <p class="mt-4">Available on the iOS App Store.</p>
       <a
@@ -97,33 +145,37 @@
       >
     </section>
 
+    <!-- Contact Section -->
     <section
       id="contact"
-      class="h-screen flex flex-col justify-center items-center bg-gray-100 text-center">
+      class="h-screen flex flex-col justify-center items-center bg-gray-100 text-center"
+    >
       <h2 class="text-3xl font-semibold">Contact Us</h2>
       <form class="mt-6 max-w-lg mx-auto bg-white p-6 shadow-md rounded-lg">
         <input
           type="text"
           placeholder="Your Name"
           class="w-full mb-4 p-3 border rounded-md"
-          required />
+          required
+        />
         <input
           type="email"
           placeholder="Your Email"
           class="w-full mb-4 p-3 border rounded-md"
-          required />
+          required
+        />
         <textarea
           placeholder="Your Message"
           class="w-full mb-4 p-3 border rounded-md"
           rows="4"
-          required></textarea>
+          required
+        ></textarea>
         <button class="bg-blue-500 text-white px-6 py-3 rounded-md">
           Send Message
         </button>
       </form>
     </section>
 
-    <!-- Footer -->
     <footer class="text-center py-6 bg-white shadow-md">
       <p>&copy; 2024 Invoice App Generator. All Rights Reserved.</p>
     </footer>
